@@ -9,7 +9,7 @@ node
   }
   stage
   {
-    sh 'mvn --version'
+    sh "mvn -version"
   }
   stage('Git Checkout')
   {
@@ -17,6 +17,6 @@ node
   }
   stage('Compile-Package')
   {
-     sh 'mvn package'
+     sh "mvn package"
   }
 }
