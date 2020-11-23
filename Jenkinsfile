@@ -1,5 +1,9 @@
 node
 {
+  stage('Clean-up')
+  {
+    deleteDir()
+  }
   stage('Git Checkout')
   {
     git 'https://github.com/nikhilsaxena/java-test'
