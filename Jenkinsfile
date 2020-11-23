@@ -7,6 +7,10 @@ node
   {
     deleteDir()
   }
+  stage
+  {
+    sh 'mvn --version'
+  }
   stage('Git Checkout')
   {
     git 'https://github.com/nikhilsaxena/java-test'
