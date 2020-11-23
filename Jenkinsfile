@@ -1,5 +1,8 @@
 node
 {
+  tools {
+    maven "3.6.3"
+  }
   stage('Clean-up')
   {
     deleteDir()
