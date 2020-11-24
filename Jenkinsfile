@@ -13,9 +13,6 @@ node
   }
   stage('Maven-Version')
   {
-    script
-	{
-	  sh 'mvn -v'
-	}
+    sh 'mvn -v'
   }	
 }
