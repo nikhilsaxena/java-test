@@ -7,12 +7,19 @@ node
   {
     deleteDir()
   }
+  stage('Maven-Check')
+  {
+    sh 'mvn
+  }
   stage('Git Checkout')
   {
     git 'https://github.com/nikhilsaxena/java-test'
   }
   stage('Compile-Package')
   {
-     sh 'mvn package'
+    script
+	 {
+      sh 'mvn package'
+     }
   }
 }
